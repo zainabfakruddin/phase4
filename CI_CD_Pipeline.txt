@@ -1,0 +1,7 @@
+IBM Cloud CI/CD Pipeline Configuration:
+
+1. Go to IBM Cloud -> Continuous Delivery -> Create a new pipeline.
+2. Set up a Build stage to build the Docker image.
+3. Add a Deploy stage to deploy the image to Kubernetes using kubectl.
+4. Connect GitHub repository to trigger automatic builds on code changes.
+5. Monitor pipeline execution in IBM Cloud Dashboard.
