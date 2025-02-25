@@ -1,0 +1,38 @@
+THIS IS THE STEPS TO FOLLOW TO RUN THE APPLICATION
+DELETE THE FILE BEFORE UPLOADING
+
+# STEP 1 
+# build the docker
+	docker build -t ecomm.
+
+# STEP 2
+# run the docker image 
+	docker run -p 8501:8501 ecomm
+
+# STEP 3
+# push it to the the container registry like Docker Hub
+	docker tag ecomm:latest vishnur03/ecomm:latest
+	docker push vishnur03/ecomm:latest
+	
+#STEP 
+#working with minikube  be in the root folder/projectfolder
+	minikube start
+	minikube status
+
+	kubectl apply -f kubernetes/deployment.yaml
+	kubectl apply -f kubernetes/service.yaml
+#deployment and service status
+	kubectl get deployments
+	kubectl get pods
+	kubectl get svc
+#access the service
+	minikube service ecomm
+
+
+
+
+
+
+
+
+
